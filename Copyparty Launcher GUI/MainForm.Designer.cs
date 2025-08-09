@@ -38,6 +38,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabGeneral = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.redirectOutputBox = new System.Windows.Forms.CheckBox();
             this.chkRMagic = new System.Windows.Forms.CheckBox();
             this.chkEnableDots = new System.Windows.Forms.CheckBox();
             this.txtServerName = new System.Windows.Forms.TextBox();
@@ -53,6 +54,8 @@
             this.txtPort = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIp = new System.Windows.Forms.TextBox();
+            this.serverLogPage = new System.Windows.Forms.TabPage();
+            this.serverLogBox = new System.Windows.Forms.RichTextBox();
             this.tabAccounts = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -151,16 +154,14 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.mainTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.serverLogPage = new System.Windows.Forms.TabPage();
-            this.serverLogBox = new System.Windows.Forms.RichTextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.redirectOutputBox = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabGeneral.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCpuCores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxClients)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.serverLogPage.SuspendLayout();
             this.tabAccounts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -195,7 +196,6 @@
             this.tabUi.SuspendLayout();
             this.tabLogging.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.serverLogPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -215,6 +215,7 @@
             this.txtCopyPartyPath.Name = "txtCopyPartyPath";
             this.txtCopyPartyPath.Size = new System.Drawing.Size(588, 20);
             this.txtCopyPartyPath.TabIndex = 1;
+            this.txtCopyPartyPath.Text = "C:\\copyparty\\copyparty.exe";
             // 
             // btnBrowseExe
             // 
@@ -316,6 +317,17 @@
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "General";
+            // 
+            // redirectOutputBox
+            // 
+            this.redirectOutputBox.AutoSize = true;
+            this.redirectOutputBox.Location = new System.Drawing.Point(267, 101);
+            this.redirectOutputBox.Name = "redirectOutputBox";
+            this.redirectOutputBox.Size = new System.Drawing.Size(184, 17);
+            this.redirectOutputBox.TabIndex = 9;
+            this.redirectOutputBox.Text = "Redirect output to Server Log tab";
+            this.mainTooltip.SetToolTip(this.redirectOutputBox, "Redirect output of copyparty console to Server Log tab");
+            this.redirectOutputBox.UseVisualStyleBackColor = true;
             // 
             // chkRMagic
             // 
@@ -460,6 +472,26 @@
             this.txtIp.Name = "txtIp";
             this.txtIp.Size = new System.Drawing.Size(135, 20);
             this.txtIp.TabIndex = 0;
+            // 
+            // serverLogPage
+            // 
+            this.serverLogPage.Controls.Add(this.serverLogBox);
+            this.serverLogPage.Location = new System.Drawing.Point(4, 22);
+            this.serverLogPage.Name = "serverLogPage";
+            this.serverLogPage.Size = new System.Drawing.Size(762, 339);
+            this.serverLogPage.TabIndex = 11;
+            this.serverLogPage.Text = "Server Log";
+            this.serverLogPage.UseVisualStyleBackColor = true;
+            // 
+            // serverLogBox
+            // 
+            this.serverLogBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.serverLogBox.Location = new System.Drawing.Point(3, 3);
+            this.serverLogBox.Name = "serverLogBox";
+            this.serverLogBox.Size = new System.Drawing.Size(756, 333);
+            this.serverLogBox.TabIndex = 0;
+            this.serverLogBox.Text = "";
             // 
             // tabAccounts
             // 
@@ -1524,41 +1556,10 @@
             this.lblStatus.Size = new System.Drawing.Size(39, 17);
             this.lblStatus.Text = "Ready";
             // 
-            // serverLogPage
-            // 
-            this.serverLogPage.Controls.Add(this.serverLogBox);
-            this.serverLogPage.Location = new System.Drawing.Point(4, 22);
-            this.serverLogPage.Name = "serverLogPage";
-            this.serverLogPage.Size = new System.Drawing.Size(762, 339);
-            this.serverLogPage.TabIndex = 11;
-            this.serverLogPage.Text = "Server Log";
-            this.serverLogPage.UseVisualStyleBackColor = true;
-            // 
-            // serverLogBox
-            // 
-            this.serverLogBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.serverLogBox.Location = new System.Drawing.Point(3, 3);
-            this.serverLogBox.Name = "serverLogBox";
-            this.serverLogBox.Size = new System.Drawing.Size(756, 333);
-            this.serverLogBox.TabIndex = 0;
-            this.serverLogBox.Text = "";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // redirectOutputBox
-            // 
-            this.redirectOutputBox.AutoSize = true;
-            this.redirectOutputBox.Location = new System.Drawing.Point(267, 101);
-            this.redirectOutputBox.Name = "redirectOutputBox";
-            this.redirectOutputBox.Size = new System.Drawing.Size(184, 17);
-            this.redirectOutputBox.TabIndex = 9;
-            this.redirectOutputBox.Text = "Redirect output to Server Log tab";
-            this.mainTooltip.SetToolTip(this.redirectOutputBox, "Redirect output of copyparty console to Server Log tab");
-            this.redirectOutputBox.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -1585,6 +1586,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxClients)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.serverLogPage.ResumeLayout(false);
             this.tabAccounts.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -1632,7 +1634,6 @@
             this.tabLogging.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.serverLogPage.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
