@@ -10,3 +10,9 @@ A GUI winforms launcher for the Copyparty fileserver (Launcher only for Windows 
 
 ## Demo Video
 https://github.com/user-attachments/assets/f3bba7c2-25ee-440d-9449-91888cc7df56
+
+## Donation links
+
+Anything is super helpful! Anything donated helps me keep developing this program and others!
+- https://www.paypal.com/paypalme/lifeline42
+- https://cash.app/$codoen314
