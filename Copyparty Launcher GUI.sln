@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeDarkMode_Lib", "NativeDarkMode_Lib\NativeDarkMode_Lib.csproj", "{E67E658C-8452-4668-A07B-F4C1A75EA228}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,14 @@ Global
 		{316524A9-C624-4C24-AF6B-EACE87B46D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{316524A9-C624-4C24-AF6B-EACE87B46D8B}.Release|x64.ActiveCfg = Release|x64
 		{316524A9-C624-4C24-AF6B-EACE87B46D8B}.Release|x64.Build.0 = Release|x64
+		{E67E658C-8452-4668-A07B-F4C1A75EA228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E67E658C-8452-4668-A07B-F4C1A75EA228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E67E658C-8452-4668-A07B-F4C1A75EA228}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E67E658C-8452-4668-A07B-F4C1A75EA228}.Debug|x64.Build.0 = Debug|Any CPU
+		{E67E658C-8452-4668-A07B-F4C1A75EA228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E67E658C-8452-4668-A07B-F4C1A75EA228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E67E658C-8452-4668-A07B-F4C1A75EA228}.Release|x64.ActiveCfg = Release|Any CPU
+		{E67E658C-8452-4668-A07B-F4C1A75EA228}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

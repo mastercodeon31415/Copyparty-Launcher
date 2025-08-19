@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NativeDarkMode_Lib;
 
 namespace Copyparty_Launcher_GUI
 {
@@ -20,8 +21,11 @@ namespace Copyparty_Launcher_GUI
 
         public MainForm()
         {
+            // OG SIZE: 810, 502
             InitializeComponent();
             _appSettings = SettingsManager.Load();
+
+            NativeDarkMode_Lib.Converter.DarkModeEnable(this);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -331,7 +335,7 @@ namespace Copyparty_Launcher_GUI
                 _redirector = new HighPerformanceConsoleRedirector(serverLogBox, _appSettings.CopyPartyExePath, cliArgs);
                 _redirector.Start();
 
-                tabControl1.SelectedTab = serverLogPage;
+                darkTabControl1.SelectedTab = serverLoggingPage;
             }
             else
             {

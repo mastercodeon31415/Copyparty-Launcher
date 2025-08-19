@@ -35,8 +35,6 @@
             this.btnLaunchCli = new System.Windows.Forms.Button();
             this.btnLaunchConfig = new System.Windows.Forms.Button();
             this.btnSaveConfig = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabGeneral = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.redirectOutputBox = new System.Windows.Forms.CheckBox();
             this.chkRMagic = new System.Windows.Forms.CheckBox();
@@ -54,10 +52,7 @@
             this.txtPort = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIp = new System.Windows.Forms.TextBox();
-            this.serverLogPage = new System.Windows.Forms.TabPage();
             this.serverLogBox = new System.Windows.Forms.RichTextBox();
-            this.tabAccounts = new System.Windows.Forms.TabPage();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnRemoveAccount = new System.Windows.Forms.Button();
             this.btnAddAccount = new System.Windows.Forms.Button();
@@ -66,12 +61,10 @@
             this.btnRemoveGroup = new System.Windows.Forms.Button();
             this.btnAddGroup = new System.Windows.Forms.Button();
             this.dgvGroups = new System.Windows.Forms.DataGridView();
-            this.tabVolumes = new System.Windows.Forms.TabPage();
             this.btnEditVolume = new System.Windows.Forms.Button();
             this.btnRemoveVolume = new System.Windows.Forms.Button();
             this.btnAddVolume = new System.Windows.Forms.Button();
             this.dgvVolumes = new System.Windows.Forms.DataGridView();
-            this.tabDiscovery = new System.Windows.Forms.TabPage();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.txtZsLoc = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -92,14 +85,12 @@
             this.chkZVerbose = new System.Windows.Forms.CheckBox();
             this.chkZeroconf = new System.Windows.Forms.CheckBox();
             this.chkQrCode = new System.Windows.Forms.CheckBox();
-            this.tabUploads = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.chkReflink = new System.Windows.Forms.CheckBox();
             this.chkHardlink = new System.Windows.Forms.CheckBox();
             this.chkDedup = new System.Windows.Forms.CheckBox();
             this.chkNoDupe = new System.Windows.Forms.CheckBox();
             this.chkDotPart = new System.Windows.Forms.CheckBox();
-            this.tabDbAndThumbs = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.txtThSize = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -115,7 +106,6 @@
             this.chkE2DSA = new System.Windows.Forms.CheckBox();
             this.chkE2DS = new System.Windows.Forms.CheckBox();
             this.chkE2D = new System.Windows.Forms.CheckBox();
-            this.tabProtocols = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.chkDavInf = new System.Windows.Forms.CheckBox();
             this.chkDav = new System.Windows.Forms.CheckBox();
@@ -124,7 +114,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.numFtpPort = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.tabSecurity = new System.Windows.Forms.TabPage();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -135,17 +124,14 @@
             this.chkSafety3 = new System.Windows.Forms.CheckBox();
             this.chkSafety2 = new System.Windows.Forms.CheckBox();
             this.chkSafety1 = new System.Windows.Forms.CheckBox();
-            this.tabSsl = new System.Windows.Forms.TabPage();
             this.btnBrowseCert = new System.Windows.Forms.Button();
             this.txtCertPath = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.chkHttpsOnly = new System.Windows.Forms.CheckBox();
             this.chkHttpOnly = new System.Windows.Forms.CheckBox();
-            this.tabUi = new System.Windows.Forms.TabPage();
             this.chkNoBranding = new System.Windows.Forms.CheckBox();
             this.chkLocaltime = new System.Windows.Forms.CheckBox();
             this.chkGrid = new System.Windows.Forms.CheckBox();
-            this.tabLogging = new System.Windows.Forms.TabPage();
             this.btnBrowseLog = new System.Windows.Forms.Button();
             this.txtLogFile = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -155,47 +141,62 @@
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.mainTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tabControl1.SuspendLayout();
-            this.tabGeneral.SuspendLayout();
+            this.darkTabControl1 = new NativeDarkMode_Lib.DarkTabControl();
+            this.generalPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.serverLoggingPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.accPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.volsPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.discovPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.upPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.dbPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.protoPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.secPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.sslPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.uiPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.loggingPage = new NativeDarkMode_Lib.DarkTabPage();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCpuCores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxClients)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.serverLogPage.SuspendLayout();
-            this.tabAccounts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).BeginInit();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroups)).BeginInit();
-            this.tabVolumes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVolumes)).BeginInit();
-            this.tabDiscovery.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numZmSpam)).BeginInit();
             this.groupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMcHop)).BeginInit();
-            this.tabUploads.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.tabDbAndThumbs.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRescan)).BeginInit();
-            this.tabProtocols.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numFtpsPort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numFtpPort)).BeginInit();
-            this.tabSecurity.SuspendLayout();
             this.groupBox12.SuspendLayout();
-            this.tabSsl.SuspendLayout();
-            this.tabUi.SuspendLayout();
-            this.tabLogging.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.darkTabControl1)).BeginInit();
+            this.darkTabControl1.SuspendLayout();
+            this.generalPage.SuspendLayout();
+            this.serverLoggingPage.SuspendLayout();
+            this.accPage.SuspendLayout();
+            this.volsPage.SuspendLayout();
+            this.discovPage.SuspendLayout();
+            this.upPage.SuspendLayout();
+            this.dbPage.SuspendLayout();
+            this.protoPage.SuspendLayout();
+            this.secPage.SuspendLayout();
+            this.sslPage.SuspendLayout();
+            this.uiPage.SuspendLayout();
+            this.loggingPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -213,14 +214,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCopyPartyPath.Location = new System.Drawing.Point(113, 12);
             this.txtCopyPartyPath.Name = "txtCopyPartyPath";
-            this.txtCopyPartyPath.Size = new System.Drawing.Size(588, 20);
+            this.txtCopyPartyPath.Size = new System.Drawing.Size(1148, 20);
             this.txtCopyPartyPath.TabIndex = 1;
             this.txtCopyPartyPath.Text = "C:\\copyparty\\copyparty.exe";
             // 
             // btnBrowseExe
             // 
             this.btnBrowseExe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowseExe.Location = new System.Drawing.Point(707, 10);
+            this.btnBrowseExe.Location = new System.Drawing.Point(1267, 10);
             this.btnBrowseExe.Name = "btnBrowseExe";
             this.btnBrowseExe.Size = new System.Drawing.Size(75, 23);
             this.btnBrowseExe.TabIndex = 2;
@@ -232,7 +233,7 @@
             // 
             this.btnLaunchCli.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLaunchCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLaunchCli.Location = new System.Drawing.Point(455, 410);
+            this.btnLaunchCli.Location = new System.Drawing.Point(1015, 410);
             this.btnLaunchCli.Name = "btnLaunchCli";
             this.btnLaunchCli.Size = new System.Drawing.Size(165, 28);
             this.btnLaunchCli.TabIndex = 4;
@@ -243,7 +244,7 @@
             // btnLaunchConfig
             // 
             this.btnLaunchConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLaunchConfig.Location = new System.Drawing.Point(626, 410);
+            this.btnLaunchConfig.Location = new System.Drawing.Point(1186, 410);
             this.btnLaunchConfig.Name = "btnLaunchConfig";
             this.btnLaunchConfig.Size = new System.Drawing.Size(156, 28);
             this.btnLaunchConfig.TabIndex = 5;
@@ -262,41 +263,6 @@
             this.btnSaveConfig.UseVisualStyleBackColor = true;
             this.btnSaveConfig.Click += new System.EventHandler(this.btnSaveConfig_Click);
             // 
-            // tabControl1
-            // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabGeneral);
-            this.tabControl1.Controls.Add(this.serverLogPage);
-            this.tabControl1.Controls.Add(this.tabAccounts);
-            this.tabControl1.Controls.Add(this.tabVolumes);
-            this.tabControl1.Controls.Add(this.tabDiscovery);
-            this.tabControl1.Controls.Add(this.tabUploads);
-            this.tabControl1.Controls.Add(this.tabDbAndThumbs);
-            this.tabControl1.Controls.Add(this.tabProtocols);
-            this.tabControl1.Controls.Add(this.tabSecurity);
-            this.tabControl1.Controls.Add(this.tabSsl);
-            this.tabControl1.Controls.Add(this.tabUi);
-            this.tabControl1.Controls.Add(this.tabLogging);
-            this.tabControl1.Location = new System.Drawing.Point(12, 39);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(770, 365);
-            this.tabControl1.TabIndex = 7;
-            // 
-            // tabGeneral
-            // 
-            this.tabGeneral.Controls.Add(this.groupBox4);
-            this.tabGeneral.Controls.Add(this.groupBox1);
-            this.tabGeneral.Location = new System.Drawing.Point(4, 22);
-            this.tabGeneral.Name = "tabGeneral";
-            this.tabGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGeneral.Size = new System.Drawing.Size(762, 339);
-            this.tabGeneral.TabIndex = 0;
-            this.tabGeneral.Text = "General";
-            this.tabGeneral.UseVisualStyleBackColor = true;
-            // 
             // groupBox4
             // 
             this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -311,9 +277,9 @@
             this.groupBox4.Controls.Add(this.chkUsernames);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Location = new System.Drawing.Point(6, 6);
+            this.groupBox4.Location = new System.Drawing.Point(3, 3);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(750, 133);
+            this.groupBox4.Size = new System.Drawing.Size(1318, 133);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "General";
@@ -423,9 +389,9 @@
             this.groupBox1.Controls.Add(this.txtPort);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtIp);
-            this.groupBox1.Location = new System.Drawing.Point(6, 145);
+            this.groupBox1.Location = new System.Drawing.Point(3, 142);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(750, 81);
+            this.groupBox1.Size = new System.Drawing.Size(1321, 189);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Network";
@@ -473,54 +439,14 @@
             this.txtIp.Size = new System.Drawing.Size(135, 20);
             this.txtIp.TabIndex = 0;
             // 
-            // serverLogPage
-            // 
-            this.serverLogPage.Controls.Add(this.serverLogBox);
-            this.serverLogPage.Location = new System.Drawing.Point(4, 22);
-            this.serverLogPage.Name = "serverLogPage";
-            this.serverLogPage.Size = new System.Drawing.Size(762, 339);
-            this.serverLogPage.TabIndex = 11;
-            this.serverLogPage.Text = "Server Log";
-            this.serverLogPage.UseVisualStyleBackColor = true;
-            // 
             // serverLogBox
             // 
-            this.serverLogBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.serverLogBox.Location = new System.Drawing.Point(3, 3);
+            this.serverLogBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.serverLogBox.Location = new System.Drawing.Point(0, 0);
             this.serverLogBox.Name = "serverLogBox";
-            this.serverLogBox.Size = new System.Drawing.Size(756, 333);
+            this.serverLogBox.Size = new System.Drawing.Size(1327, 335);
             this.serverLogBox.TabIndex = 0;
             this.serverLogBox.Text = "";
-            // 
-            // tabAccounts
-            // 
-            this.tabAccounts.Controls.Add(this.splitContainer1);
-            this.tabAccounts.Location = new System.Drawing.Point(4, 22);
-            this.tabAccounts.Name = "tabAccounts";
-            this.tabAccounts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAccounts.Size = new System.Drawing.Size(762, 339);
-            this.tabAccounts.TabIndex = 1;
-            this.tabAccounts.Text = "Accounts & Groups";
-            this.tabAccounts.UseVisualStyleBackColor = true;
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.groupBox5);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.groupBox6);
-            this.splitContainer1.Size = new System.Drawing.Size(756, 333);
-            this.splitContainer1.SplitterDistance = 164;
-            this.splitContainer1.TabIndex = 0;
             // 
             // groupBox5
             // 
@@ -530,7 +456,7 @@
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Location = new System.Drawing.Point(0, 0);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(756, 164);
+            this.groupBox5.Size = new System.Drawing.Size(1327, 158);
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "User Accounts (-a)";
@@ -538,7 +464,7 @@
             // btnRemoveAccount
             // 
             this.btnRemoveAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemoveAccount.Location = new System.Drawing.Point(675, 48);
+            this.btnRemoveAccount.Location = new System.Drawing.Point(1246, 48);
             this.btnRemoveAccount.Name = "btnRemoveAccount";
             this.btnRemoveAccount.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveAccount.TabIndex = 5;
@@ -549,7 +475,7 @@
             // btnAddAccount
             // 
             this.btnAddAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddAccount.Location = new System.Drawing.Point(675, 19);
+            this.btnAddAccount.Location = new System.Drawing.Point(1246, 19);
             this.btnAddAccount.Name = "btnAddAccount";
             this.btnAddAccount.Size = new System.Drawing.Size(75, 23);
             this.btnAddAccount.TabIndex = 4;
@@ -565,7 +491,7 @@
             this.dgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAccounts.Location = new System.Drawing.Point(6, 19);
             this.dgvAccounts.Name = "dgvAccounts";
-            this.dgvAccounts.Size = new System.Drawing.Size(663, 139);
+            this.dgvAccounts.Size = new System.Drawing.Size(1234, 133);
             this.dgvAccounts.TabIndex = 3;
             // 
             // groupBox6
@@ -576,7 +502,7 @@
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Location = new System.Drawing.Point(0, 0);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(756, 165);
+            this.groupBox6.Size = new System.Drawing.Size(1327, 173);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Groups (--grp)";
@@ -584,7 +510,7 @@
             // btnRemoveGroup
             // 
             this.btnRemoveGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemoveGroup.Location = new System.Drawing.Point(675, 48);
+            this.btnRemoveGroup.Location = new System.Drawing.Point(1246, 48);
             this.btnRemoveGroup.Name = "btnRemoveGroup";
             this.btnRemoveGroup.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveGroup.TabIndex = 5;
@@ -595,7 +521,7 @@
             // btnAddGroup
             // 
             this.btnAddGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddGroup.Location = new System.Drawing.Point(675, 19);
+            this.btnAddGroup.Location = new System.Drawing.Point(1246, 19);
             this.btnAddGroup.Name = "btnAddGroup";
             this.btnAddGroup.Size = new System.Drawing.Size(75, 23);
             this.btnAddGroup.TabIndex = 4;
@@ -611,26 +537,13 @@
             this.dgvGroups.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroups.Location = new System.Drawing.Point(6, 19);
             this.dgvGroups.Name = "dgvGroups";
-            this.dgvGroups.Size = new System.Drawing.Size(663, 140);
+            this.dgvGroups.Size = new System.Drawing.Size(1234, 148);
             this.dgvGroups.TabIndex = 3;
-            // 
-            // tabVolumes
-            // 
-            this.tabVolumes.Controls.Add(this.btnEditVolume);
-            this.tabVolumes.Controls.Add(this.btnRemoveVolume);
-            this.tabVolumes.Controls.Add(this.btnAddVolume);
-            this.tabVolumes.Controls.Add(this.dgvVolumes);
-            this.tabVolumes.Location = new System.Drawing.Point(4, 22);
-            this.tabVolumes.Name = "tabVolumes";
-            this.tabVolumes.Size = new System.Drawing.Size(762, 339);
-            this.tabVolumes.TabIndex = 2;
-            this.tabVolumes.Text = "Volumes";
-            this.tabVolumes.UseVisualStyleBackColor = true;
             // 
             // btnEditVolume
             // 
             this.btnEditVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditVolume.Location = new System.Drawing.Point(681, 35);
+            this.btnEditVolume.Location = new System.Drawing.Point(1246, 33);
             this.btnEditVolume.Name = "btnEditVolume";
             this.btnEditVolume.Size = new System.Drawing.Size(75, 23);
             this.btnEditVolume.TabIndex = 6;
@@ -641,7 +554,7 @@
             // btnRemoveVolume
             // 
             this.btnRemoveVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemoveVolume.Location = new System.Drawing.Point(681, 64);
+            this.btnRemoveVolume.Location = new System.Drawing.Point(1246, 62);
             this.btnRemoveVolume.Name = "btnRemoveVolume";
             this.btnRemoveVolume.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveVolume.TabIndex = 5;
@@ -652,7 +565,7 @@
             // btnAddVolume
             // 
             this.btnAddVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddVolume.Location = new System.Drawing.Point(681, 6);
+            this.btnAddVolume.Location = new System.Drawing.Point(1246, 4);
             this.btnAddVolume.Name = "btnAddVolume";
             this.btnAddVolume.Size = new System.Drawing.Size(75, 23);
             this.btnAddVolume.TabIndex = 4;
@@ -666,25 +579,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVolumes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVolumes.Location = new System.Drawing.Point(6, 6);
+            this.dgvVolumes.Location = new System.Drawing.Point(6, 4);
             this.dgvVolumes.Name = "dgvVolumes";
             this.dgvVolumes.ReadOnly = true;
             this.dgvVolumes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVolumes.Size = new System.Drawing.Size(669, 327);
+            this.dgvVolumes.Size = new System.Drawing.Size(1234, 327);
             this.dgvVolumes.TabIndex = 3;
-            // 
-            // tabDiscovery
-            // 
-            this.tabDiscovery.Controls.Add(this.groupBox15);
-            this.tabDiscovery.Controls.Add(this.groupBox14);
-            this.tabDiscovery.Controls.Add(this.groupBox13);
-            this.tabDiscovery.Location = new System.Drawing.Point(4, 22);
-            this.tabDiscovery.Name = "tabDiscovery";
-            this.tabDiscovery.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDiscovery.Size = new System.Drawing.Size(762, 339);
-            this.tabDiscovery.TabIndex = 10;
-            this.tabDiscovery.Text = "Discovery";
-            this.tabDiscovery.UseVisualStyleBackColor = true;
             // 
             // groupBox15
             // 
@@ -694,9 +594,9 @@
             this.groupBox15.Controls.Add(this.label18);
             this.groupBox15.Controls.Add(this.chkZsVerbose);
             this.groupBox15.Controls.Add(this.chkZs);
-            this.groupBox15.Location = new System.Drawing.Point(6, 232);
+            this.groupBox15.Location = new System.Drawing.Point(9, 230);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(750, 89);
+            this.groupBox15.Size = new System.Drawing.Size(1308, 99);
             this.groupBox15.TabIndex = 2;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "SSDP (Windows)";
@@ -749,9 +649,9 @@
             this.groupBox14.Controls.Add(this.chkZm6);
             this.groupBox14.Controls.Add(this.chkZm4);
             this.groupBox14.Controls.Add(this.chkZm);
-            this.groupBox14.Location = new System.Drawing.Point(6, 109);
+            this.groupBox14.Location = new System.Drawing.Point(9, 107);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(750, 117);
+            this.groupBox14.Size = new System.Drawing.Size(1308, 117);
             this.groupBox14.TabIndex = 1;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "mDNS (macOS, Linux)";
@@ -849,9 +749,9 @@
             this.groupBox13.Controls.Add(this.chkZVerbose);
             this.groupBox13.Controls.Add(this.chkZeroconf);
             this.groupBox13.Controls.Add(this.chkQrCode);
-            this.groupBox13.Location = new System.Drawing.Point(6, 6);
+            this.groupBox13.Location = new System.Drawing.Point(9, 4);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(750, 97);
+            this.groupBox13.Size = new System.Drawing.Size(1308, 97);
             this.groupBox13.TabIndex = 0;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "General";
@@ -913,17 +813,6 @@
             this.chkQrCode.Text = "Enable QR Code (--qr)";
             this.chkQrCode.UseVisualStyleBackColor = true;
             // 
-            // tabUploads
-            // 
-            this.tabUploads.Controls.Add(this.groupBox7);
-            this.tabUploads.Location = new System.Drawing.Point(4, 22);
-            this.tabUploads.Name = "tabUploads";
-            this.tabUploads.Padding = new System.Windows.Forms.Padding(3);
-            this.tabUploads.Size = new System.Drawing.Size(762, 339);
-            this.tabUploads.TabIndex = 3;
-            this.tabUploads.Text = "Uploads";
-            this.tabUploads.UseVisualStyleBackColor = true;
-            // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.chkReflink);
@@ -931,9 +820,9 @@
             this.groupBox7.Controls.Add(this.chkDedup);
             this.groupBox7.Controls.Add(this.chkNoDupe);
             this.groupBox7.Controls.Add(this.chkDotPart);
-            this.groupBox7.Location = new System.Drawing.Point(6, 6);
+            this.groupBox7.Location = new System.Drawing.Point(12, 10);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(640, 126);
+            this.groupBox7.Size = new System.Drawing.Size(1252, 313);
             this.groupBox7.TabIndex = 0;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Upload Behavior";
@@ -989,18 +878,6 @@
             this.mainTooltip.SetToolTip(this.chkDotPart, "Hides partial uploads from clients.");
             this.chkDotPart.UseVisualStyleBackColor = true;
             // 
-            // tabDbAndThumbs
-            // 
-            this.tabDbAndThumbs.Controls.Add(this.groupBox9);
-            this.tabDbAndThumbs.Controls.Add(this.groupBox8);
-            this.tabDbAndThumbs.Location = new System.Drawing.Point(4, 22);
-            this.tabDbAndThumbs.Name = "tabDbAndThumbs";
-            this.tabDbAndThumbs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDbAndThumbs.Size = new System.Drawing.Size(762, 339);
-            this.tabDbAndThumbs.TabIndex = 4;
-            this.tabDbAndThumbs.Text = "Database & Thumbs";
-            this.tabDbAndThumbs.UseVisualStyleBackColor = true;
-            // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.txtThSize);
@@ -1008,9 +885,9 @@
             this.groupBox9.Controls.Add(this.chkNoAThumb);
             this.groupBox9.Controls.Add(this.chkNoVThumb);
             this.groupBox9.Controls.Add(this.chkNoThumb);
-            this.groupBox9.Location = new System.Drawing.Point(6, 179);
+            this.groupBox9.Location = new System.Drawing.Point(3, 176);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(640, 100);
+            this.groupBox9.Size = new System.Drawing.Size(1261, 147);
             this.groupBox9.TabIndex = 1;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Thumbnails";
@@ -1071,9 +948,9 @@
             this.groupBox8.Controls.Add(this.chkE2DSA);
             this.groupBox8.Controls.Add(this.chkE2DS);
             this.groupBox8.Controls.Add(this.chkE2D);
-            this.groupBox8.Location = new System.Drawing.Point(6, 6);
+            this.groupBox8.Location = new System.Drawing.Point(6, 3);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(640, 167);
+            this.groupBox8.Size = new System.Drawing.Size(1258, 167);
             this.groupBox8.TabIndex = 0;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Database";
@@ -1160,25 +1037,13 @@
             this.chkE2D.Text = "Enable upload database (--e2d)";
             this.chkE2D.UseVisualStyleBackColor = true;
             // 
-            // tabProtocols
-            // 
-            this.tabProtocols.Controls.Add(this.groupBox11);
-            this.tabProtocols.Controls.Add(this.groupBox10);
-            this.tabProtocols.Location = new System.Drawing.Point(4, 22);
-            this.tabProtocols.Name = "tabProtocols";
-            this.tabProtocols.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProtocols.Size = new System.Drawing.Size(762, 339);
-            this.tabProtocols.TabIndex = 5;
-            this.tabProtocols.Text = "Protocols";
-            this.tabProtocols.UseVisualStyleBackColor = true;
-            // 
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.chkDavInf);
             this.groupBox11.Controls.Add(this.chkDav);
-            this.groupBox11.Location = new System.Drawing.Point(6, 110);
+            this.groupBox11.Location = new System.Drawing.Point(12, 181);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(640, 83);
+            this.groupBox11.Size = new System.Drawing.Size(1256, 148);
             this.groupBox11.TabIndex = 1;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "WebDAV";
@@ -1211,9 +1076,9 @@
             this.groupBox10.Controls.Add(this.label10);
             this.groupBox10.Controls.Add(this.numFtpPort);
             this.groupBox10.Controls.Add(this.label9);
-            this.groupBox10.Location = new System.Drawing.Point(6, 6);
+            this.groupBox10.Location = new System.Drawing.Point(12, 10);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(640, 98);
+            this.groupBox10.Size = new System.Drawing.Size(1256, 165);
             this.groupBox10.TabIndex = 0;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "FTP / FTPS (0 = disabled)";
@@ -1260,17 +1125,6 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "FTP Port (--ftp)";
             // 
-            // tabSecurity
-            // 
-            this.tabSecurity.Controls.Add(this.groupBox12);
-            this.tabSecurity.Location = new System.Drawing.Point(4, 22);
-            this.tabSecurity.Name = "tabSecurity";
-            this.tabSecurity.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSecurity.Size = new System.Drawing.Size(762, 339);
-            this.tabSecurity.TabIndex = 6;
-            this.tabSecurity.Text = "Security";
-            this.tabSecurity.UseVisualStyleBackColor = true;
-            // 
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.label12);
@@ -1282,9 +1136,9 @@
             this.groupBox12.Controls.Add(this.chkSafety3);
             this.groupBox12.Controls.Add(this.chkSafety2);
             this.groupBox12.Controls.Add(this.chkSafety1);
-            this.groupBox12.Location = new System.Drawing.Point(6, 6);
+            this.groupBox12.Location = new System.Drawing.Point(12, 8);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(640, 169);
+            this.groupBox12.Size = new System.Drawing.Size(1256, 321);
             this.groupBox12.TabIndex = 0;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Safety Options";
@@ -1374,24 +1228,9 @@
             this.chkSafety1.Text = "Base Safety (-s)";
             this.chkSafety1.UseVisualStyleBackColor = true;
             // 
-            // tabSsl
-            // 
-            this.tabSsl.Controls.Add(this.btnBrowseCert);
-            this.tabSsl.Controls.Add(this.txtCertPath);
-            this.tabSsl.Controls.Add(this.label13);
-            this.tabSsl.Controls.Add(this.chkHttpsOnly);
-            this.tabSsl.Controls.Add(this.chkHttpOnly);
-            this.tabSsl.Location = new System.Drawing.Point(4, 22);
-            this.tabSsl.Name = "tabSsl";
-            this.tabSsl.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSsl.Size = new System.Drawing.Size(762, 339);
-            this.tabSsl.TabIndex = 7;
-            this.tabSsl.Text = "SSL/TLS";
-            this.tabSsl.UseVisualStyleBackColor = true;
-            // 
             // btnBrowseCert
             // 
-            this.btnBrowseCert.Location = new System.Drawing.Point(549, 80);
+            this.btnBrowseCert.Location = new System.Drawing.Point(574, 94);
             this.btnBrowseCert.Name = "btnBrowseCert";
             this.btnBrowseCert.Size = new System.Drawing.Size(75, 23);
             this.btnBrowseCert.TabIndex = 4;
@@ -1401,7 +1240,7 @@
             // 
             // txtCertPath
             // 
-            this.txtCertPath.Location = new System.Drawing.Point(119, 82);
+            this.txtCertPath.Location = new System.Drawing.Point(144, 96);
             this.txtCertPath.Name = "txtCertPath";
             this.txtCertPath.Size = new System.Drawing.Size(424, 20);
             this.txtCertPath.TabIndex = 3;
@@ -1409,7 +1248,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(15, 85);
+            this.label13.Location = new System.Drawing.Point(40, 99);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(106, 13);
             this.label13.TabIndex = 2;
@@ -1418,7 +1257,7 @@
             // chkHttpsOnly
             // 
             this.chkHttpsOnly.AutoSize = true;
-            this.chkHttpsOnly.Location = new System.Drawing.Point(18, 52);
+            this.chkHttpsOnly.Location = new System.Drawing.Point(43, 66);
             this.chkHttpsOnly.Name = "chkHttpsOnly";
             this.chkHttpsOnly.Size = new System.Drawing.Size(152, 17);
             this.chkHttpsOnly.TabIndex = 1;
@@ -1428,30 +1267,17 @@
             // chkHttpOnly
             // 
             this.chkHttpOnly.AutoSize = true;
-            this.chkHttpOnly.Location = new System.Drawing.Point(18, 29);
+            this.chkHttpOnly.Location = new System.Drawing.Point(43, 43);
             this.chkHttpOnly.Name = "chkHttpOnly";
             this.chkHttpOnly.Size = new System.Drawing.Size(164, 17);
             this.chkHttpOnly.TabIndex = 0;
             this.chkHttpOnly.Text = "Disable SSL/TLS (--http-only)";
             this.chkHttpOnly.UseVisualStyleBackColor = true;
             // 
-            // tabUi
-            // 
-            this.tabUi.Controls.Add(this.chkNoBranding);
-            this.tabUi.Controls.Add(this.chkLocaltime);
-            this.tabUi.Controls.Add(this.chkGrid);
-            this.tabUi.Location = new System.Drawing.Point(4, 22);
-            this.tabUi.Name = "tabUi";
-            this.tabUi.Padding = new System.Windows.Forms.Padding(3);
-            this.tabUi.Size = new System.Drawing.Size(762, 339);
-            this.tabUi.TabIndex = 8;
-            this.tabUi.Text = "UI";
-            this.tabUi.UseVisualStyleBackColor = true;
-            // 
             // chkNoBranding
             // 
             this.chkNoBranding.AutoSize = true;
-            this.chkNoBranding.Location = new System.Drawing.Point(18, 75);
+            this.chkNoBranding.Location = new System.Drawing.Point(27, 71);
             this.chkNoBranding.Name = "chkNoBranding";
             this.chkNoBranding.Size = new System.Drawing.Size(179, 17);
             this.chkNoBranding.TabIndex = 2;
@@ -1461,7 +1287,7 @@
             // chkLocaltime
             // 
             this.chkLocaltime.AutoSize = true;
-            this.chkLocaltime.Location = new System.Drawing.Point(18, 52);
+            this.chkLocaltime.Location = new System.Drawing.Point(27, 48);
             this.chkLocaltime.Name = "chkLocaltime";
             this.chkLocaltime.Size = new System.Drawing.Size(206, 17);
             this.chkLocaltime.TabIndex = 1;
@@ -1471,31 +1297,16 @@
             // chkGrid
             // 
             this.chkGrid.AutoSize = true;
-            this.chkGrid.Location = new System.Drawing.Point(18, 29);
+            this.chkGrid.Location = new System.Drawing.Point(27, 25);
             this.chkGrid.Name = "chkGrid";
             this.chkGrid.Size = new System.Drawing.Size(158, 17);
             this.chkGrid.TabIndex = 0;
             this.chkGrid.Text = "Show Grid by Default (--grid)";
             this.chkGrid.UseVisualStyleBackColor = true;
             // 
-            // tabLogging
-            // 
-            this.tabLogging.Controls.Add(this.btnBrowseLog);
-            this.tabLogging.Controls.Add(this.txtLogFile);
-            this.tabLogging.Controls.Add(this.label14);
-            this.tabLogging.Controls.Add(this.chkLogConn);
-            this.tabLogging.Controls.Add(this.chkQuiet);
-            this.tabLogging.Location = new System.Drawing.Point(4, 22);
-            this.tabLogging.Name = "tabLogging";
-            this.tabLogging.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLogging.Size = new System.Drawing.Size(762, 339);
-            this.tabLogging.TabIndex = 9;
-            this.tabLogging.Text = "Logging";
-            this.tabLogging.UseVisualStyleBackColor = true;
-            // 
             // btnBrowseLog
             // 
-            this.btnBrowseLog.Location = new System.Drawing.Point(452, 80);
+            this.btnBrowseLog.Location = new System.Drawing.Point(472, 105);
             this.btnBrowseLog.Name = "btnBrowseLog";
             this.btnBrowseLog.Size = new System.Drawing.Size(75, 23);
             this.btnBrowseLog.TabIndex = 4;
@@ -1505,7 +1316,7 @@
             // 
             // txtLogFile
             // 
-            this.txtLogFile.Location = new System.Drawing.Point(86, 82);
+            this.txtLogFile.Location = new System.Drawing.Point(106, 107);
             this.txtLogFile.Name = "txtLogFile";
             this.txtLogFile.Size = new System.Drawing.Size(360, 20);
             this.txtLogFile.TabIndex = 3;
@@ -1513,7 +1324,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(15, 85);
+            this.label14.Location = new System.Drawing.Point(35, 110);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(64, 13);
             this.label14.TabIndex = 2;
@@ -1522,7 +1333,7 @@
             // chkLogConn
             // 
             this.chkLogConn.AutoSize = true;
-            this.chkLogConn.Location = new System.Drawing.Point(18, 52);
+            this.chkLogConn.Location = new System.Drawing.Point(38, 77);
             this.chkLogConn.Name = "chkLogConn";
             this.chkLogConn.Size = new System.Drawing.Size(162, 17);
             this.chkLogConn.TabIndex = 1;
@@ -1533,7 +1344,7 @@
             // chkQuiet
             // 
             this.chkQuiet.AutoSize = true;
-            this.chkQuiet.Location = new System.Drawing.Point(18, 29);
+            this.chkQuiet.Location = new System.Drawing.Point(38, 54);
             this.chkQuiet.Name = "chkQuiet";
             this.chkQuiet.Size = new System.Drawing.Size(129, 17);
             this.chkQuiet.TabIndex = 0;
@@ -1546,7 +1357,7 @@
             this.lblStatus});
             this.statusStrip1.Location = new System.Drawing.Point(0, 441);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(794, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1354, 22);
             this.statusStrip1.TabIndex = 8;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -1561,44 +1372,251 @@
             this.timer1.Interval = 1500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // darkTabControl1
+            // 
+            this.darkTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.darkTabControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.darkTabControl1.Controls.Add(this.generalPage);
+            this.darkTabControl1.Controls.Add(this.serverLoggingPage);
+            this.darkTabControl1.Controls.Add(this.loggingPage);
+            this.darkTabControl1.Controls.Add(this.uiPage);
+            this.darkTabControl1.Controls.Add(this.sslPage);
+            this.darkTabControl1.Controls.Add(this.secPage);
+            this.darkTabControl1.Controls.Add(this.protoPage);
+            this.darkTabControl1.Controls.Add(this.dbPage);
+            this.darkTabControl1.Controls.Add(this.upPage);
+            this.darkTabControl1.Controls.Add(this.discovPage);
+            this.darkTabControl1.Controls.Add(this.volsPage);
+            this.darkTabControl1.Controls.Add(this.accPage);
+            this.darkTabControl1.Location = new System.Drawing.Point(15, 39);
+            this.darkTabControl1.Name = "darkTabControl1";
+            this.darkTabControl1.Size = new System.Drawing.Size(1327, 365);
+            this.darkTabControl1.TabIndex = 9;
+            this.darkTabControl1.TabPages.Add(this.generalPage);
+            this.darkTabControl1.TabPages.Add(this.serverLoggingPage);
+            this.darkTabControl1.TabPages.Add(this.accPage);
+            this.darkTabControl1.TabPages.Add(this.volsPage);
+            this.darkTabControl1.TabPages.Add(this.discovPage);
+            this.darkTabControl1.TabPages.Add(this.upPage);
+            this.darkTabControl1.TabPages.Add(this.dbPage);
+            this.darkTabControl1.TabPages.Add(this.protoPage);
+            this.darkTabControl1.TabPages.Add(this.secPage);
+            this.darkTabControl1.TabPages.Add(this.sslPage);
+            this.darkTabControl1.TabPages.Add(this.uiPage);
+            this.darkTabControl1.TabPages.Add(this.loggingPage);
+            // 
+            // generalPage
+            // 
+            this.generalPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.generalPage.Controls.Add(this.groupBox4);
+            this.generalPage.Controls.Add(this.groupBox1);
+            this.generalPage.Location = new System.Drawing.Point(0, 30);
+            this.generalPage.Name = "generalPage";
+            this.generalPage.Size = new System.Drawing.Size(1327, 335);
+            this.generalPage.TabIndex = 1;
+            this.generalPage.Text = "General";
+            // 
+            // serverLoggingPage
+            // 
+            this.serverLoggingPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.serverLoggingPage.Controls.Add(this.serverLogBox);
+            this.serverLoggingPage.Location = new System.Drawing.Point(0, 30);
+            this.serverLoggingPage.Name = "serverLoggingPage";
+            this.serverLoggingPage.Size = new System.Drawing.Size(1327, 335);
+            this.serverLoggingPage.TabIndex = 2;
+            this.serverLoggingPage.Text = "Server Log";
+            // 
+            // accPage
+            // 
+            this.accPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.accPage.Controls.Add(this.splitContainer2);
+            this.accPage.Location = new System.Drawing.Point(0, 30);
+            this.accPage.Name = "accPage";
+            this.accPage.Size = new System.Drawing.Size(1327, 335);
+            this.accPage.TabIndex = 3;
+            this.accPage.Text = "Accounts & Groups";
+            // 
+            // volsPage
+            // 
+            this.volsPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.volsPage.Controls.Add(this.btnEditVolume);
+            this.volsPage.Controls.Add(this.dgvVolumes);
+            this.volsPage.Controls.Add(this.btnRemoveVolume);
+            this.volsPage.Controls.Add(this.btnAddVolume);
+            this.volsPage.Location = new System.Drawing.Point(0, 30);
+            this.volsPage.Name = "volsPage";
+            this.volsPage.Size = new System.Drawing.Size(1327, 335);
+            this.volsPage.TabIndex = 4;
+            this.volsPage.Text = "Volumes";
+            // 
+            // discovPage
+            // 
+            this.discovPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.discovPage.Controls.Add(this.groupBox15);
+            this.discovPage.Controls.Add(this.groupBox14);
+            this.discovPage.Controls.Add(this.groupBox13);
+            this.discovPage.Location = new System.Drawing.Point(0, 30);
+            this.discovPage.Name = "discovPage";
+            this.discovPage.Size = new System.Drawing.Size(1327, 335);
+            this.discovPage.TabIndex = 5;
+            this.discovPage.Text = "Discovery";
+            // 
+            // upPage
+            // 
+            this.upPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.upPage.Controls.Add(this.groupBox7);
+            this.upPage.Location = new System.Drawing.Point(0, 30);
+            this.upPage.Name = "upPage";
+            this.upPage.Size = new System.Drawing.Size(1327, 335);
+            this.upPage.TabIndex = 6;
+            this.upPage.Text = "Uploads";
+            // 
+            // dbPage
+            // 
+            this.dbPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbPage.Controls.Add(this.groupBox9);
+            this.dbPage.Controls.Add(this.groupBox8);
+            this.dbPage.Location = new System.Drawing.Point(0, 30);
+            this.dbPage.Name = "dbPage";
+            this.dbPage.Size = new System.Drawing.Size(1327, 335);
+            this.dbPage.TabIndex = 7;
+            this.dbPage.Text = "Database & Thumbs";
+            // 
+            // protoPage
+            // 
+            this.protoPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.protoPage.Controls.Add(this.groupBox11);
+            this.protoPage.Controls.Add(this.groupBox10);
+            this.protoPage.Location = new System.Drawing.Point(0, 30);
+            this.protoPage.Name = "protoPage";
+            this.protoPage.Size = new System.Drawing.Size(1327, 335);
+            this.protoPage.TabIndex = 8;
+            this.protoPage.Text = "Protocols";
+            // 
+            // secPage
+            // 
+            this.secPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.secPage.Controls.Add(this.groupBox12);
+            this.secPage.Location = new System.Drawing.Point(0, 30);
+            this.secPage.Name = "secPage";
+            this.secPage.Size = new System.Drawing.Size(1327, 335);
+            this.secPage.TabIndex = 9;
+            this.secPage.Text = "Security";
+            // 
+            // sslPage
+            // 
+            this.sslPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sslPage.Controls.Add(this.btnBrowseCert);
+            this.sslPage.Controls.Add(this.chkHttpOnly);
+            this.sslPage.Controls.Add(this.txtCertPath);
+            this.sslPage.Controls.Add(this.chkHttpsOnly);
+            this.sslPage.Controls.Add(this.label13);
+            this.sslPage.Location = new System.Drawing.Point(0, 30);
+            this.sslPage.Name = "sslPage";
+            this.sslPage.Size = new System.Drawing.Size(1327, 335);
+            this.sslPage.TabIndex = 10;
+            this.sslPage.Text = "SSL/TLS";
+            // 
+            // uiPage
+            // 
+            this.uiPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiPage.Controls.Add(this.chkNoBranding);
+            this.uiPage.Controls.Add(this.chkGrid);
+            this.uiPage.Controls.Add(this.chkLocaltime);
+            this.uiPage.Location = new System.Drawing.Point(0, 30);
+            this.uiPage.Name = "uiPage";
+            this.uiPage.Size = new System.Drawing.Size(1327, 335);
+            this.uiPage.TabIndex = 11;
+            this.uiPage.Text = "UI";
+            // 
+            // loggingPage
+            // 
+            this.loggingPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.loggingPage.Controls.Add(this.btnBrowseLog);
+            this.loggingPage.Controls.Add(this.chkQuiet);
+            this.loggingPage.Controls.Add(this.txtLogFile);
+            this.loggingPage.Controls.Add(this.chkLogConn);
+            this.loggingPage.Controls.Add(this.label14);
+            this.loggingPage.Location = new System.Drawing.Point(0, 30);
+            this.loggingPage.Name = "loggingPage";
+            this.loggingPage.Size = new System.Drawing.Size(1327, 335);
+            this.loggingPage.TabIndex = 12;
+            this.loggingPage.Text = "Logging";
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.groupBox5);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.groupBox6);
+            this.splitContainer2.Size = new System.Drawing.Size(1327, 335);
+            this.splitContainer2.SplitterDistance = 158;
+            this.splitContainer2.TabIndex = 1;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 463);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.ClientSize = new System.Drawing.Size(1354, 463);
+            this.Controls.Add(this.darkTabControl1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnSaveConfig);
             this.Controls.Add(this.btnLaunchConfig);
             this.Controls.Add(this.btnLaunchCli);
             this.Controls.Add(this.btnBrowseExe);
             this.Controls.Add(this.txtCopyPartyPath);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Silver;
             this.MinimumSize = new System.Drawing.Size(700, 502);
             this.Name = "MainForm";
             this.Text = "Copyparty GUI Launcher";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabGeneral.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCpuCores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxClients)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.serverLogPage.ResumeLayout(false);
-            this.tabAccounts.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).EndInit();
             this.groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroups)).EndInit();
-            this.tabVolumes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVolumes)).EndInit();
-            this.tabDiscovery.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.groupBox14.ResumeLayout(false);
@@ -1607,33 +1625,44 @@
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMcHop)).EndInit();
-            this.tabUploads.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.tabDbAndThumbs.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRescan)).EndInit();
-            this.tabProtocols.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numFtpsPort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numFtpPort)).EndInit();
-            this.tabSecurity.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
-            this.tabSsl.ResumeLayout(false);
-            this.tabSsl.PerformLayout();
-            this.tabUi.ResumeLayout(false);
-            this.tabUi.PerformLayout();
-            this.tabLogging.ResumeLayout(false);
-            this.tabLogging.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.darkTabControl1)).EndInit();
+            this.darkTabControl1.ResumeLayout(false);
+            this.generalPage.ResumeLayout(false);
+            this.serverLoggingPage.ResumeLayout(false);
+            this.accPage.ResumeLayout(false);
+            this.volsPage.ResumeLayout(false);
+            this.discovPage.ResumeLayout(false);
+            this.upPage.ResumeLayout(false);
+            this.dbPage.ResumeLayout(false);
+            this.protoPage.ResumeLayout(false);
+            this.secPage.ResumeLayout(false);
+            this.sslPage.ResumeLayout(false);
+            this.sslPage.PerformLayout();
+            this.uiPage.ResumeLayout(false);
+            this.uiPage.PerformLayout();
+            this.loggingPage.ResumeLayout(false);
+            this.loggingPage.PerformLayout();
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1647,9 +1676,6 @@
         private System.Windows.Forms.Button btnLaunchCli;
         private System.Windows.Forms.Button btnLaunchConfig;
         private System.Windows.Forms.Button btnSaveConfig;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabGeneral;
-        private System.Windows.Forms.TabPage tabAccounts;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
         private System.Windows.Forms.ToolTip mainTooltip;
@@ -1667,15 +1693,6 @@
         private System.Windows.Forms.TextBox txtPort;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIp;
-        private System.Windows.Forms.TabPage tabVolumes;
-        private System.Windows.Forms.TabPage tabUploads;
-        private System.Windows.Forms.TabPage tabDbAndThumbs;
-        private System.Windows.Forms.TabPage tabProtocols;
-        private System.Windows.Forms.TabPage tabSecurity;
-        private System.Windows.Forms.TabPage tabSsl;
-        private System.Windows.Forms.TabPage tabUi;
-        private System.Windows.Forms.TabPage tabLogging;
-        private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnRemoveAccount;
         private System.Windows.Forms.Button btnAddAccount;
@@ -1742,7 +1759,6 @@
         private System.Windows.Forms.Button btnBrowseLog;
         private System.Windows.Forms.CheckBox chkEnableDots;
         private System.Windows.Forms.CheckBox chkRMagic;
-        private System.Windows.Forms.TabPage tabDiscovery;
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.TextBox txtZsLoc;
         private System.Windows.Forms.Label label18;
@@ -1763,10 +1779,23 @@
         private System.Windows.Forms.CheckBox chkZVerbose;
         private System.Windows.Forms.CheckBox chkZeroconf;
         private System.Windows.Forms.CheckBox chkQrCode;
-        private System.Windows.Forms.TabPage serverLogPage;
         private System.Windows.Forms.RichTextBox serverLogBox;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.CheckBox redirectOutputBox;
+        private NativeDarkMode_Lib.DarkTabControl darkTabControl1;
+        private NativeDarkMode_Lib.DarkTabPage generalPage;
+        private NativeDarkMode_Lib.DarkTabPage serverLoggingPage;
+        private NativeDarkMode_Lib.DarkTabPage accPage;
+        private NativeDarkMode_Lib.DarkTabPage volsPage;
+        private NativeDarkMode_Lib.DarkTabPage discovPage;
+        private NativeDarkMode_Lib.DarkTabPage upPage;
+        private NativeDarkMode_Lib.DarkTabPage dbPage;
+        private NativeDarkMode_Lib.DarkTabPage protoPage;
+        private NativeDarkMode_Lib.DarkTabPage secPage;
+        private NativeDarkMode_Lib.DarkTabPage sslPage;
+        private NativeDarkMode_Lib.DarkTabPage uiPage;
+        private NativeDarkMode_Lib.DarkTabPage loggingPage;
+        private System.Windows.Forms.SplitContainer splitContainer2;
     }
 }
 
