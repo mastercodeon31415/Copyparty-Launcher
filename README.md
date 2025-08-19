@@ -1,9 +1,9 @@
 # Copyparty-Launcher
 A GUI winforms launcher for the Copyparty fileserver (Launcher only for Windows right now)
 
-<img width="1356" height="495" alt="{A9F6D18D-8A86-40D9-935A-604492FF4AE9}" src="https://github.com/user-attachments/assets/3e0fa84a-c598-4063-ba2d-9cb6ef6365b7" />
+<img width="1356" height="495" alt="{1050752E-F6F6-45F6-A46C-8A8DE15F5DD3}" src="https://github.com/user-attachments/assets/0dd3d3cc-4cc9-4ee8-a526-a576d992d877" />
 
-<img width="1374" height="510" alt="{AF4C3F46-76F1-49F7-B1D4-A1575653D2D0}" src="https://github.com/user-attachments/assets/68ec48be-9391-48e4-8f6d-567fdd675242" />
+<img width="586" height="454" alt="{7A4CF0C6-6E5E-410C-BF20-5E0FC693BBD0}" src="https://github.com/user-attachments/assets/69fea435-f24e-46e7-a1f5-7aad872b51b9" />
 
 ## v1.1 Release Notes
 - Added native dark mode support
