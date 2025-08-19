@@ -19,6 +19,7 @@ namespace Copyparty_Launcher_GUI.Forms
         {
             InitializeComponent();
             this.VolumeData = volume;
+            NativeDarkMode_Lib.Converter.DarkModeEnable(this);
         }
 
         private void VolumeEditorForm_Load(object sender, EventArgs e)
