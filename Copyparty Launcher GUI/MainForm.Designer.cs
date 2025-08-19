@@ -233,9 +233,9 @@
             // 
             this.btnLaunchCli.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLaunchCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLaunchCli.Location = new System.Drawing.Point(1015, 410);
+            this.btnLaunchCli.Location = new System.Drawing.Point(987, 410);
             this.btnLaunchCli.Name = "btnLaunchCli";
-            this.btnLaunchCli.Size = new System.Drawing.Size(165, 28);
+            this.btnLaunchCli.Size = new System.Drawing.Size(193, 28);
             this.btnLaunchCli.TabIndex = 4;
             this.btnLaunchCli.Text = "Launch with Current Settings";
             this.btnLaunchCli.UseVisualStyleBackColor = true;
