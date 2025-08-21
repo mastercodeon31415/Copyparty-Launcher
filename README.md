@@ -1,3 +1,7 @@
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mastercodeon31415/Copyparty-Launcher/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/mastercodeon31415/Copyparty-Launcher)](https://github.com/mastercodeon31415/Copyparty-Launcher/issues)
+[![GitHub stars](https://img.shields.io/github/stars/mastercodeon31415/Copyparty-Launcher)](https://github.com/mastercodeon31415/Copyparty-Launcher/stargazers)
+
 # Copyparty-Launcher
 A GUI winforms launcher for the Copyparty fileserver (Launcher only for Windows right now)
 
@@ -11,8 +15,16 @@ A GUI winforms launcher for the Copyparty fileserver (Launcher only for Windows 
 ## Demo Video
 https://github.com/user-attachments/assets/f3bba7c2-25ee-440d-9449-91888cc7df56
 
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or encounter any issues, please feel free to open an issue or submit a pull request.
+
 ## Donation links
 
 Anything is super helpful! Anything donated helps me keep developing this program and others!
 - https://www.paypal.com/paypalme/lifeline42
 - https://cash.app/$codoen314
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/mastercodeon31415/Copyparty-Launcher/blob/main/LICENSE) file for details. 
